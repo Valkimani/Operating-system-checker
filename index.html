@@ -12,11 +12,29 @@
     <body>
         
         <h1>Location Redirect</h1>
+        <h2>Tell me what browser I am using from the client information.</h2>
 
-
+<!-- if window.clientInformation.platform === MacIntel
+            alert that they're on a Mac
+            else if window.clientInformation.platform === Windows
+            alert that they're on a Windows. 
+            else
+            alert we don't know what they're on! -->
         <script>
             console.log("Hello world")
             console.log(window)
+            console.log(window.clientInformation.platform); 
+
+ if(window.clientInformation.platform === "MacIntel"){
+     alert ("You're using a Mac!");
+ }
+ else if(window.clientInformation.platform === "Windows"){
+     alert("You're using Windows");
+ }
+ else{
+     alert("We don't know what you're using.")
+ }
+
 
         </script>
     
