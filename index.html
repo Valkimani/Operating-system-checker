@@ -19,7 +19,11 @@
             else if window.clientInformation.platform === Windows
             alert that they're on a Windows. 
             else
-            alert we don't know what they're on! -->
+            alert we don't know what they're on! 
+        GEO LOCATION
+        Call the geolocation get current position navigator
+        -->
+
         <script>
             console.log("Hello world")
             console.log(window)
@@ -34,6 +38,9 @@
  else{
      alert("We don't know what you're using.")
  }
+
+ console.log(window.navigator)
+ window.navigator.geolocation.getCurrentPosition();
 
 
         </script>
